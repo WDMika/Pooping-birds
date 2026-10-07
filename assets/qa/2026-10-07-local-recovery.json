@@ -1,0 +1,14 @@
+{
+  "observedAt": "2026-10-07",
+  "sourceCommit": "f6cc6bc06e318571448e1d00fdb903542072388e",
+  "snapshot": "../production-backups/20261007-152304-production-workflow",
+  "restoredCopy": "../production-backups/restore-check-20261007-152406",
+  "bundleVerified": true,
+  "restoredCommitMatched": true,
+  "assetFilesHashMatched": 32,
+  "developmentWorkflowCheck": "passed",
+  "fullStudioSceneRestored": false,
+  "liveGameplayRestored": false,
+  "githubBackup": "pending authentication",
+  "scope": "Local Git bundle and materialized asset recovery; not the complete Studio/live release recovery gate."
+}
