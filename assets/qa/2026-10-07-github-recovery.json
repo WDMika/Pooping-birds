@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "checkedAt": "2026-10-07T14:29:05.6738902Z",
+  "repository": "https://github.com/WDMika/Pooping-birds.git",
+  "visibility": "public",
+  "commit": "489a5677def274ab4e1e1ee023b83a6e0178ce69",
+  "restoredDirectory": "C:/Users/mikai/Desktop/roblox game/production-backups/github-restore-20261007-162848",
+  "trackedFilesVerified": 95,
+  "lfsFilesVerified": 9,
+  "method": "Fresh remote clone; explicit LFS pull and fsck; exact SHA256 of nine materialized binary assets; canonical Git blobs of all remaining tracked files; restored development workflow check",
+  "passed": true,
+  "limitations": [
+    "Full Studio scene, asset permissions, live gameplay and player data recovery are separate tests"
+  ]
+}

@@ -63,9 +63,9 @@
     },
     {
       "id": "githubBackup",
-      "status": "pending",
-      "evidence": null,
-      "reviewedAt": null
+      "status": "passed",
+      "evidence": "assets/qa/2026-10-07-github-recovery.json",
+      "reviewedAt": "2026-10-07"
     }
   ]
 }
