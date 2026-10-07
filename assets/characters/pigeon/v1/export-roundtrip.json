@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "fbx": [
+    {
+      "file": "Pigeon_Rig.fbx",
+      "triangles": 11999,
+      "bones": 16,
+      "actions": 0,
+      "importedDimensionsMeters": [
+        1.7929810285568237,
+        0.9290257692337036,
+        0.9545667171478271
+      ],
+      "maxInfluences": 4
+    },
+    {
+      "file": "Pigeon_Idle.fbx",
+      "triangles": 11999,
+      "bones": 16,
+      "actions": 1,
+      "importedDimensionsMeters": [
+        1.907288908958435,
+        0.9290257096290588,
+        0.9545667171478271
+      ],
+      "maxInfluences": 4
+    },
+    {
+      "file": "Pigeon_TakeOff.fbx",
+      "triangles": 11999,
+      "bones": 16,
+      "actions": 1,
+      "importedDimensionsMeters": [
+        1.907288908958435,
+        0.9290257096290588,
+        0.9545667171478271
+      ],
+      "maxInfluences": 4
+    },
+    {
+      "file": "Pigeon_Fly.fbx",
+      "triangles": 11999,
+      "bones": 16,
+      "actions": 1,
+      "importedDimensionsMeters": [
+        1.7929807901382446,
+        1.1532484292984009,
+        0.8550395369529724
+      ],
+      "maxInfluences": 4
+    },
+    {
+      "file": "Pigeon_Glide.fbx",
+      "triangles": 11999,
+      "bones": 16,
+      "actions": 1,
+      "importedDimensionsMeters": [
+        1.7131025791168213,
+        1.1640673875808716,
+        0.9520199298858643
+      ],
+      "maxInfluences": 4
+    },
+    {
+      "file": "Pigeon_Land.fbx",
+      "triangles": 11999,
+      "bones": 16,
+      "actions": 1,
+      "importedDimensionsMeters": [
+        1.7929810285568237,
+        1.1920362710952759,
+        0.8458009958267212
+      ],
+      "maxInfluences": 4
+    }
+  ],
+  "glbAnimations": [
+    "Fly",
+    "Glide",
+    "Idle",
+    "Land",
+    "TakeOff"
+  ]
+}

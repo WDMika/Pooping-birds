@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "effects": [
+    {
+      "id": "PoopSplat",
+      "name": "PB_VFX_PoopSplat_v01",
+      "status": "implemented",
+      "owner": "server",
+      "hook": "ImpactService.Splat",
+      "lifetimeSeconds": 7,
+      "maxActive": 80,
+      "maxEmitPerBurst": 0,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "Headshot",
+      "name": "PB_VFX_Headshot_v01",
+      "status": "implemented",
+      "owner": "client presentation",
+      "hook": "UIController.animateHit",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "ScorePopup",
+      "name": "PB_VFX_ScorePopup_v01",
+      "status": "implemented",
+      "owner": "client presentation",
+      "hook": "UIController.animateHit",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "Speed",
+      "name": "PB_VFX_Speed_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "Dive",
+      "name": "PB_VFX_Dive_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "Wanted",
+      "name": "PB_VFX_Wanted_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "EggHatch",
+      "name": "PB_VFX_EggHatch_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "LegendaryReward",
+      "name": "PB_VFX_LegendaryReward_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "PvP",
+      "name": "PB_VFX_PvP_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "BirdAbility",
+      "name": "PB_VFX_BirdAbility_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "Trail",
+      "name": "PB_VFX_Trail_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    },
+    {
+      "id": "Cosmetic",
+      "name": "PB_VFX_Cosmetic_v01",
+      "status": "planned",
+      "owner": "client presentation",
+      "hook": "future backend/state hook",
+      "lifetimeSeconds": 1.2,
+      "maxActive": 12,
+      "maxEmitPerBurst": 24,
+      "maxDistanceStuds": 150,
+      "awardsGameplay": false
+    }
+  ]
+}

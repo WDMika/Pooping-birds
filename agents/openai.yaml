@@ -1,0 +1,5 @@
+interface:
+  display_name: "Roblox Game Development"
+  short_description: "Build and ship complete Roblox games"
+  brand_color: "#00A2FF"
+  default_prompt: "Use $roblox-game-development to turn my Roblox game idea into a playable, production-ready project."

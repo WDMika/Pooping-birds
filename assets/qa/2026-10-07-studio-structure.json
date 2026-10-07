@@ -1,0 +1,28 @@
+{
+  "observedAt": "2026-10-07",
+  "scope": "Edit structure only; no runtime claims",
+  "WorldVersion": 2,
+  "Tags": {
+    "FoodSpawn": 55,
+    "NPCSpawn": 33,
+    "DogSpawn": 6,
+    "HubInteraction": 4,
+    "WaterSpawn": 17,
+    "ReturnToHub": 6,
+    "AnimalControlSpawn": 6,
+    "FlightLaunch": 4
+  },
+  "Templates": {
+    "Pigeon": {
+      "RigVersion": "BirdRig_v1",
+      "Bones": 16
+    }
+  },
+  "PlaceId": 119022971112182,
+  "World": {
+    "Gameplay": 171,
+    "City": 889,
+    "Hub": 215
+  },
+  "StreamingEnabled": true
+}

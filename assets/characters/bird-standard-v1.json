@@ -1,0 +1,15 @@
+{
+  "rigVersion": "BirdRig_v1",
+  "coordinates": {"blenderForward": "+Y", "blenderUp": "+Z", "robloxForward": "-Z", "robloxUp": "+Y", "metersPerStud": 0.28},
+  "fps": 30,
+  "maxInfluences": 4,
+  "budgets": {"heroTriangles": 12000, "lod1Triangles": 5000, "lod2Triangles": 2000, "textureSize": 512},
+  "hierarchy": {
+    "Root": null, "Body": "Root", "Chest": "Body", "Neck": "Body", "Head": "Neck",
+    "Wing_L_Upper": "Body", "Wing_L_Mid": "Wing_L_Upper", "Wing_L_Tip": "Wing_L_Mid",
+    "Wing_R_Upper": "Body", "Wing_R_Mid": "Wing_R_Upper", "Wing_R_Tip": "Wing_R_Mid",
+    "Tail": "Body", "Leg_L": "Body", "Foot_L": "Leg_L", "Leg_R": "Body", "Foot_R": "Leg_R"
+  },
+  "proofClips": {"Idle": {"duration": 2, "loop": true}, "TakeOff": {"duration": 0.8, "loop": false}, "Fly": {"duration": 0.8, "loop": true}, "Glide": {"duration": 1.6, "loop": true}, "Land": {"duration": 0.7, "loop": false}},
+  "reservedClips": ["Walk", "Hop", "FastFly", "Dive", "Brake", "TurnLeft", "TurnRight", "Eat", "Drink", "Poop", "Attack", "Hit", "Stunned", "Sleep", "Death"]
+}

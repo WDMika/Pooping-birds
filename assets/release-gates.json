@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "gates": [
+    {
+      "id": "studioSceneSaved",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "characterArtistReview",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "publishedAnimations",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "characterGameplayAndRespawn",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "audioRightsAndPlayback",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "multiplayer",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "privatePersistenceRoundtrip",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "physicalDevices",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "performance",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "restoreDrill",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    },
+    {
+      "id": "githubBackup",
+      "status": "pending",
+      "evidence": null,
+      "reviewedAt": null
+    }
+  ]
+}

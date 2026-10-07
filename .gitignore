@@ -1,0 +1,11 @@
+# Development dependencies and generated places
+**/node_modules/
+game/build/
+# Temporary encrypted credential transfer, never source or game data
+tools/meshy/.credential-transfer
+**/.env
+**/.env.*
+**/*.blend1
+**/*.blend2
+tools/production/results/
+**/.credential-transfer

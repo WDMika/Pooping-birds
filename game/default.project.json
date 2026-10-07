@@ -1,0 +1,84 @@
+{
+  "name": "POOPINGBIRDS",
+  "servePlaceIds": [
+    119022971112182
+  ],
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$className": "Folder",
+        "Config": {
+          "$path": "src/ReplicatedStorage/Shared/Config.luau"
+        },
+        "UITheme": {
+          "$path": "src/ReplicatedStorage/Shared/UITheme.luau"
+        },
+        "WorldConfig": {
+          "$path": "src/ReplicatedStorage/Shared/WorldConfig.luau"
+        },
+        "BirdAnimationConfig": {
+          "$path": "src/ReplicatedStorage/Shared/BirdAnimationConfig.luau"
+        },
+        "BirdAnimationState": {
+          "$path": "src/ReplicatedStorage/Shared/BirdAnimationState.luau"
+        },
+        "BirdProofClips": {
+          "$path": "src/ReplicatedStorage/Shared/BirdProofClips.luau"
+        },
+        "BirdAnimationSequenceBuilder": {
+          "$path": "src/ReplicatedStorage/Shared/BirdAnimationSequenceBuilder.luau"
+        }
+      }
+    },
+    "ServerScriptService": {
+      "Services": {
+        "$className": "Folder",
+        "ImpactService": {
+          "$path": "src/ServerScriptService/Services/ImpactService.luau"
+        },
+        "ThreatService": {
+          "$path": "src/ServerScriptService/Services/ThreatService.luau"
+        },
+        "ProgressionSchema": {
+          "$path": "src/ServerScriptService/Services/ProgressionSchema.luau"
+        },
+        "WorldBuilder": {
+          "$path": "src/ServerScriptService/Services/WorldBuilder.luau"
+        },
+        "PopulationService": {
+          "$path": "src/ServerScriptService/Services/PopulationService.luau"
+        },
+        "HubService": {
+          "$path": "src/ServerScriptService/Services/HubService.luau"
+        },
+        "BirdVisualService": {
+          "$path": "src/ServerScriptService/Services/BirdVisualService.luau"
+        }
+      },
+      "GameServer": {
+        "$path": "src/ServerScriptService/GameServer.server.luau"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "ClientController": {
+          "$path": "src/StarterPlayer/StarterPlayerScripts/ClientController.client.luau"
+        },
+        "Controllers": {
+          "$className": "Folder",
+          "UIComponents": {
+            "$path": "src/StarterPlayer/StarterPlayerScripts/Controllers/UIComponents.luau"
+          },
+          "UIController": {
+            "$path": "src/StarterPlayer/StarterPlayerScripts/Controllers/UIController.luau"
+          },
+          "BirdAnimationController": {
+            "$path": "src/StarterPlayer/StarterPlayerScripts/Controllers/BirdAnimationController.luau"
+          }
+        }
+      }
+    }
+  }
+}

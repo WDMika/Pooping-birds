@@ -1,0 +1,13 @@
+# Current project state — 7 October 2026
+
+Place119022971112182, Pooping Birds. Rojo7.7.1/port34872; Blender5.2.2. Current source is `game/src`; Studio scene and asset ownership remain separate. No public publication is claimed.
+
+Implemented: flight, drops/hit rewards, Bird Points, food/survival, wanted/catcher/dog threats, bird shop/equip, five upgrades, daily rewards, schema3 persistence; six-district modular city and sanctuary with return streaming; existing responsive UITheme/UIComponents. Current Edit audit: StreamingEnabled=true; City889, Gameplay171, Hub215 descendants. These counts are a point-in-time structural observation, not performance evidence.
+
+Character proof: pigeon GLB reduced228,528→11,999 triangles;16 standard bones;4 weights maximum; five FBXs plus archival GLB and editable blend. Export round-trip passed. Imported pigeon template exists in ServerStorage.BirdCharacterTemplates.Pigeon. Prior isolated Studio checks proved Idle→TakeOff→Fly→Glide→Land and an actual2s Idle Animator preview. Published IDs, full five-clip gameplay/replication, respawn/equip QA and final artist review are incomplete. Studio preview hashes are not production animation IDs.
+
+Current audio: five legacy playback hooks with empty IDs. VFX: bounded welded splats and existing hit/score UI feedback. Content libraries enumerate remaining cues/effects with planned status. Nest/egg/incubator/breeding/challenges/PvP and full settings backends are not implemented; see CONTENT_LIBRARY for exact UI coverage.
+
+This task establishes reusable production documentation, category registries, local checks, release gates and backup procedures. It does not claim the planned content or public game release is complete. GitHub repository creation/push is pending sign-in to WDMika; update this paragraph only after verified remote backup.
+
+Next production work: finish animation asset publishing/character QA; produce licensed audio masters and IDs; prove multiplayer/persistence/device/performance gates in an owned private test environment; artist-review the blockout/rig; implement future progression only as complete server-authoritative slices. Read GAME_DESIGN before changing scope and ASSET_PIPELINE before adding content.

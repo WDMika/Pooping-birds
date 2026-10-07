@@ -1,0 +1,8 @@
+{
+  "name": "pooping-birds-meshy-tools",
+  "private": true,
+  "description": "Pinned official Meshy MCP server for the Roblox asset workflow",
+  "dependencies": {
+    "@meshy-ai/meshy-mcp-server": "0.6.0"
+  }
+}

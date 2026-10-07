@@ -1,0 +1,25 @@
+{
+  "species": "Pigeon",
+  "sourceForward": "-Y",
+  "targetWingspanStuds": 6.4,
+  "sourceToStandard": {
+    "Bone_000": "Body", "Bone_001": "Chest", "Bone_006": "Body", "Bone_005": "Body",
+    "Bone_004": "Neck", "Bone_003": "Head", "Bone_002": "Head", "Bone_015": "Head", "Bone_016": "Head",
+    "Bone_014": "Wing_L_Upper", "Bone_013": "Wing_L_Mid", "Bone_012": "Wing_L_Tip", "Bone_011": "Wing_L_Tip",
+    "Bone_010": "Wing_R_Upper", "Bone_009": "Wing_R_Mid", "Bone_008": "Wing_R_Tip", "Bone_007": "Wing_R_Tip",
+    "Bone_027": "Tail", "Bone_026": "Tail", "Bone_025": "Tail",
+    "Bone_024": "Leg_L", "Bone_023": "Leg_L", "Bone_022": "Foot_L", "Bone_021": "Foot_L",
+    "Bone_038": "Foot_L", "Bone_037": "Foot_L", "Bone_040": "Foot_L", "Bone_039": "Foot_L",
+    "Bone_043": "Foot_L", "Bone_042": "Foot_L", "Bone_041": "Foot_L", "Bone_045": "Foot_L", "Bone_044": "Foot_L",
+    "Bone_020": "Leg_R", "Bone_019": "Leg_R", "Bone_018": "Foot_R", "Bone_017": "Foot_R",
+    "Bone_029": "Foot_R", "Bone_028": "Foot_R", "Bone_031": "Foot_R", "Bone_030": "Foot_R",
+    "Bone_034": "Foot_R", "Bone_033": "Foot_R", "Bone_032": "Foot_R", "Bone_036": "Foot_R", "Bone_035": "Foot_R"
+  },
+  "landmarks": {
+    "Body": ["Bone_000", "Bone_001"], "Chest": ["Bone_001", "Bone_004"], "Neck": ["Bone_004", "Bone_003"], "Head": ["Bone_003", "Bone_016"],
+    "Wing_L_Upper": ["Bone_014", "Bone_013"], "Wing_L_Mid": ["Bone_013", "Bone_012"], "Wing_L_Tip": ["Bone_012", "Bone_011"],
+    "Wing_R_Upper": ["Bone_010", "Bone_009"], "Wing_R_Mid": ["Bone_009", "Bone_008"], "Wing_R_Tip": ["Bone_008", "Bone_007"],
+    "Tail": ["Bone_027", "Bone_026"], "Leg_L": ["Bone_024", "Bone_022"], "Foot_L": ["Bone_022", "Bone_021"],
+    "Leg_R": ["Bone_020", "Bone_018"], "Foot_R": ["Bone_018", "Bone_017"]
+  }
+}

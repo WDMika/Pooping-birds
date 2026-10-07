@@ -1,0 +1,21 @@
+{
+  "rigVersion": "BirdRig_v1",
+  "species": "Pigeon",
+  "sourceTriangles": 228528,
+  "triangles": 11999,
+  "vertices": 6005,
+  "bones": 16,
+  "maxInfluences": 4,
+  "unweightedVertices": 0,
+  "rootWeights": false,
+  "wingspanStuds": 6.4,
+  "textureSize": 512,
+  "actions": [
+    "Idle",
+    "TakeOff",
+    "Fly",
+    "Glide",
+    "Land"
+  ],
+  "fps": 30
+}
