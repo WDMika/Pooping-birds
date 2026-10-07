@@ -29,13 +29,21 @@ try {
     $taskActual = (git -C $taskDestination rev-parse HEAD).Trim()
     if ($taskActual -ne $taskExpected) { throw 'Remote clone commit mismatch' }
     $taskFiles = @(git ls-files)
+    $taskLfsFiles = @(git lfs ls-files --name-only)
     foreach ($taskRelative in $taskFiles) {
         $taskSourceFile = Join-Path $taskRoot $taskRelative
         $taskRestoredFile = Join-Path $taskDestination $taskRelative
         if (-not (Test-Path -LiteralPath $taskRestoredFile)) { throw "Missing remote file: $taskRelative" }
-        if ((Get-FileHash -LiteralPath $taskSourceFile -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $taskRestoredFile -Algorithm SHA256).Hash) { throw "Remote file hash mismatch: $taskRelative" }
+        if ($taskRelative -in $taskLfsFiles) {
+            if ((Get-FileHash -LiteralPath $taskSourceFile -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $taskRestoredFile -Algorithm SHA256).Hash) { throw "Remote LFS file hash mismatch: $taskRelative" }
+        } else {
+            # Git attributes normalize text line endings; compare canonical blobs.
+            $taskSourceHash = git hash-object "--path=$taskRelative" -- $taskSourceFile
+            if ($LASTEXITCODE -ne 0) { throw "Cannot hash source: $taskRelative" }
+            $taskRestoredHash = git -C $taskDestination hash-object "--path=$taskRelative" -- $taskRestoredFile
+            if ($LASTEXITCODE -ne 0 -or $taskSourceHash -ne $taskRestoredHash) { throw "Remote canonical file hash mismatch: $taskRelative" }
+        }
     }
-    $taskLfsFiles = @(git lfs ls-files --name-only)
     Push-Location $taskDestination
     try {
         node tools/production/check.mjs
@@ -49,7 +57,7 @@ try {
         restoredDirectory = $taskDestination
         trackedFilesVerified = $taskFiles.Count
         lfsFilesVerified = $taskLfsFiles.Count
-        method = 'Fresh remote clone, explicit LFS download/fsck, SHA256 comparison of every tracked materialized file, development workflow check'
+        method = 'Fresh remote clone, explicit LFS download/fsck, SHA256 comparison of materialized LFS files, canonical Git blob comparison of remaining tracked files, development workflow check'
         passed = $true
         limitations = @('Does not verify a full Studio scene, Roblox asset ownership, live gameplay or player data recovery')
     } | ConvertTo-Json -Depth 4
