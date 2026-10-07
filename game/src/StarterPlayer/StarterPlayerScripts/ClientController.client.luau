@@ -15,6 +15,17 @@ local action = remotes:WaitForChild("Action")
 local feedback = remotes:WaitForChild("Feedback")
 local UIController = require(script.Parent:WaitForChild("Controllers"):WaitForChild("UIController"))
 local interface = UIController.new(Config, action, feedback, player)
+local audioPresentation = require(script.Parent.Controllers.AudioController).new()
+local effectsPresentation = require(script.Parent.Controllers.VFXController).new()
+feedback.OnClientEvent:Connect(function(kind, payload)
+	if kind == "Hit" and type(payload) == "table" and payload.Headshot and typeof(payload.Position) == "Vector3" then effectsPresentation:Emit("Headshot", payload.Position) end
+	if kind == "Defeat" then
+		local char = player.Character
+		local source = char and char:FindFirstChild("HumanoidRootPart")
+		if source then audioPresentation:Play("gameplay.Capture", source) end
+	end
+end)
+script.Destroying:Connect(function() effectsPresentation:Destroy(); audioPresentation:Destroy() end)
 local BirdAnimationController = require(script.Parent.Controllers.BirdAnimationController)
 local animationControllers = {}
 local animationInput = {Flapping = false, Boost = false}

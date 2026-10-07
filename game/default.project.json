@@ -28,6 +28,9 @@
         },
         "BirdAnimationSequenceBuilder": {
           "$path": "src/ReplicatedStorage/Shared/BirdAnimationSequenceBuilder.luau"
+        },
+        "ContentDefinitions": {
+          "$path": "src/ReplicatedStorage/Shared/ContentDefinitions.luau"
         }
       }
     },
@@ -76,6 +79,12 @@
           },
           "BirdAnimationController": {
             "$path": "src/StarterPlayer/StarterPlayerScripts/Controllers/BirdAnimationController.luau"
+          },
+          "AudioController": {
+            "$path": "src/StarterPlayer/StarterPlayerScripts/Controllers/AudioController.luau"
+          },
+          "VFXController": {
+            "$path": "src/StarterPlayer/StarterPlayerScripts/Controllers/VFXController.luau"
           }
         }
       }

@@ -308,7 +308,7 @@ local function doPoop(player)
 			local mult=1;for _,tier in ipairs(Config.Scoring.Tiers) do if height<=tier.Height then mult=tier.Multiplier;break end end
 			mult+= (p.Upgrades.Multiplier or 0)*Config.Upgrades.Multiplier.Step
 			local reward=math.floor((Config.Scoring.BaseHit+(headshot and Config.Scoring.HeadshotBonus or 0))*mult)
-			local profile=profiles[player];if profile then profile.Points+=reward;sync(player);feedback:FireClient(player,"Hit",{Points=reward,Multiplier=mult,Headshot=headshot,Height=math.floor(height)});addWanted(player,Config.Scoring.WantedPerHit) end
+			local profile=profiles[player];if profile then profile.Points+=reward;sync(player);feedback:FireClient(player,"Hit",{Points=reward,Multiplier=mult,Headshot=headshot,Height=math.floor(height),Position=position});addWanted(player,Config.Scoring.WantedPerHit) end
 			PopulationService.Flee(model)
 			ImpactService.PlaySound(headshot and "Headshot" or "TargetHit", splat)
 			pellet:Destroy()

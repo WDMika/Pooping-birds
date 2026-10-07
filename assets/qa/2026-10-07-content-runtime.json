@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-10-07",
+  "environment": "Pooping Birds Studio Edit, place119022971112182",
+  "scope": "Edit API lifecycle checks plus an isolated solo Play feedback smoke test; not live release testing",
+  "recipeEmissionsAccepted": 12,
+  "headshotLimit": 12,
+  "excessHeadshotRejected": true,
+  "destroyClearedInstances": true,
+  "ttlExpired": true,
+  "trailSourceRemovalCleaned": true,
+  "unassignedAudioCuesHandled": 24,
+  "audioVoicesCreatedForMissingIds": 0,
+  "audibleAudioVerified": false,
+  "multiplayerVerified": false,
+  "isolatedPlay": {
+    "productionReadsWritesDisabled": true,
+    "controllersStarted": true,
+    "soundGroupsPresent": true,
+    "headshotPartsCreated": 8,
+    "headshotPartsExpired": true,
+    "pointsBefore": 0,
+    "pointsAfter": 0,
+    "consoleErrors": 0,
+    "playStopped": true,
+    "productionAcquisitionRestored": true
+  }
+}
