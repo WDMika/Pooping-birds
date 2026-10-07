@@ -19,7 +19,7 @@ Each asset needs: purpose in the loop, creator/source URL or Meshy task ID, righ
 | Figma | Larger multi-screen UI composition when useful | File/node links, tokens, states and Roblox object mapping |
 | Rojo 7.7.1 | Local scripts ↔ connected Studio | Port 34872; restart Play after source changes |
 | Roblox Studio | Level design, imports, asset ownership, device/server tests | Saved scene + QA evidence; publish separately |
-| Git / GitHub | Reviewable history and backups | Branch, commit, private remote, recoverable asset sources |
+| Git / GitHub | Reviewable history and backups | Branch, commit, owner-approved remote visibility, recoverable asset sources |
 | Audio editor | Record/edit/trim/normalize/loop | WAV master and upload-ready export with rights record |
 
 Use existing UITheme/UIComponents instead of introducing a second theme. Figma is optional for this workflow: no Figma file is claimed until created and linked. No audio editor is currently configured; Audacity or another owned editor can produce the masters. Meshy credentials remain in encrypted user storage, outside assets, Luau, Git and documentation.
@@ -46,6 +46,6 @@ Full cue/effect inventories and implementation routes are in `CONTENT_LIBRARY.md
 
 ## Promotion and rollback
 
-Run `node tools/production/check.mjs`; run the relevant Blender round-trip check; record Studio checks from `TESTING.md`; review all nine design questions; update catalog status and PROJECT_STATE. Commit source, exported assets, catalog and evidence together. Save a full Studio scene before a major scene edit; a scripts-only Rojo build is not a full scene backup. See `VERSION_CONTROL.md` for recoverable local snapshots, private GitHub sync and rollback.
+Run `node tools/production/check.mjs`; run the relevant Blender round-trip check; record Studio checks from `TESTING.md`; review all nine design questions; update catalog status and PROJECT_STATE. Commit source, exported assets, catalog and evidence together. Save a full Studio scene before a major scene edit; a scripts-only Rojo build is not a full scene backup. See `VERSION_CONTROL.md` for recoverable local snapshots, owner-approved GitHub sync and rollback.
 
 Reference constraints: [Roblox modeling specifications](https://create.roblox.com/docs/art/modeling/specifications), [audio assets and permissions](https://create.roblox.com/docs/audio/assets), [performance guidance](https://create.roblox.com/docs/performance-optimization/improve), [instance streaming](https://create.roblox.com/docs/workspace/streaming). Recheck current limits before new production imports.
